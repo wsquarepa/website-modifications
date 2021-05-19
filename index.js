@@ -20,7 +20,7 @@ http.createServer((req, res) => {
         if (!urlObj.pathname.includes("index")) {
             if (req.method == "GET") {
                 if (fs.existsSync("." + urlObj.pathname)) {
-                    if (req.headers.code && req.headers.code == "informativeDonkey") {
+                    if ((req.headers.code && req.headers.code == "informativeDonkey") || (urlObj.query.code && urlObj.query.code == "informativeDonkey")) {
                         responseCode = 200
                         content = fs.readFileSync("." + urlObj.pathname)
                     } else {
