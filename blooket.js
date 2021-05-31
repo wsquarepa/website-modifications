@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name         Blooket Answer Fetcher
+// @name         Blooket Answer Fetcher FREE
 // @namespace    https://wsquarepa.github.io/
 // @version      1.9
 // @description  Automatically gets and gives you the answer for Blooket
